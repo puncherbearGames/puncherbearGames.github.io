@@ -5,8 +5,7 @@
   <title>
   Puncherbeargames Home  
   </title>
- <link rel="stylesheet" href="indexCSS.css"
-       <link rel="script" href="MainScript.js">
+ <link rel="stylesheet" href="indexCSS.css">
   </head>
 
 
@@ -21,3 +20,19 @@
 <body>
 
 </body> 
+<script>
+    
+    function openMenu(){
+        document.getElementById("LinksForMenu").style.width="19.21%";
+          document.getElementById("MenuAn").innerHTML="<i class='fa fa-home'></i>";
+           document.getElementById("MenuAn").style.left="19.21%";
+        document.getElementById("MenuAn").onclick=CloseMenu;
+    }
+     function CloseMenu(){
+        document.getElementById("LinksForMenu").style.width="0%";
+        document.getElementById("MenuAn").innerHTML="<i class='fa fa-close'></i>";
+ document.getElementById("MenuAn").style.left="0%";
+        document.getElementById("MenuAn").onclick=openMenu;
+    }
+    
+</script>
