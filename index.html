@@ -14,7 +14,7 @@
 
  <button onclick="openMenu()" class="Open" id="MenuAn"><i class="fa fa-bars"></i></button>
     
-  <ul id="LinksForMenu" class="col-3">
+  <ul id="LinksForMenu">
      
   <li><a class="active" href="https://puncherbeargames.github.io/">Home</a></li>
   <li><a href="https://puncherbeargames.github.io/NotHome.html">Not Home</a></li>
@@ -31,7 +31,7 @@
     function openMenu(){
         document.getElementById("LinksForMenu").style.width="100%";
           document.getElementById("MenuAn").innerHTML="<i class='fa fa-close'></i>";
-           document.getElementById("MenuAn").style.left="100%";
+           document.getElementById("MenuAn").style.left="50%";
         document.getElementById("MenuAn").onclick=CloseMenu;
     }
      function CloseMenu(){
