@@ -42,8 +42,8 @@ list-style-type:none;
 
 li {
 
-  position:absolute;
-   left:50%;
+ width:100%
+    display:block;
   
 }
 li a {
