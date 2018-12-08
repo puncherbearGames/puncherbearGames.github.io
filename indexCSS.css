@@ -41,10 +41,9 @@ list-style-type:none;
 }
 
 li {
-
-   position:fixed;
-   left:50%;
-   
+margin: auto;
+  width: 60%;
+  
 }
 li a {
     
