@@ -41,8 +41,8 @@ list-style-type:none;
 }
 
 li {
-margin: auto;
-  width: 50%;
+
+   float:center;
   
 }
 li a {
