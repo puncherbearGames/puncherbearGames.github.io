@@ -42,7 +42,8 @@ list-style-type:none;
 
 li {
 
-   float:center;
+  position:absolute;
+   left:50%;
   
 }
 li a {
