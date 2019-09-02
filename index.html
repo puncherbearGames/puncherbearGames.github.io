@@ -1,52 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <head>
-  <title>
-  Puncherbeargames Home  
-  </title>
- <link rel="stylesheet" href="indexCSS.css" type="text/css">
-      
-  </head>
+<head>
+<meta charset="utf-8">
+<title>About D&amp;R</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+	<div class="ControlTop">
+	<h1 class = "TitleText">
+		About <br>D&amp;R
+		</h1>
+	<div Class = " Underline"></div>
+	</div>
+	
+	
+	<div class="MenuAll">
+	
+		<ul id="Menu" >
+			
+		<li ><a class="Mcon" class = "active" href = "D&R.html">Home</a></li>
+		<li ><a class="Mcon" >Not Home</a></li>
+	
+		</ul>
+		
+		<div id = "MenC">
+			
+	<button class="MeCo"  onClick="e()"><i class='fas fa-bars'></i></button>
+		
+	</div>
+		
+	</div>
+	
 
 
-    <div class = "navBar">
-
-
-    
-  <ul id="LinksForMenu">
-     <div id="MenuItems">
-  <li><a class="active" href="https://puncherbeargames.github.io/">Home</a></li>
-  <li><a href="https://puncherbeargames.github.io/NotHome.html">Not Home</a></li>
-    </div>
-      </ul>
-       <button onclick="openMenu()" class="Open" id="MenuAn"><i class="fa fa-bars"></i></button>
-      
-  </div>
-  
+	
 <body>
+	<div class="parallax" style=" background-image: url('data:image/jpeg;base64,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');"></div>
+	<div class="Test">
+	eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+		eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+	</div>
+	<div class="parallax" style=" background-image: url('https://cdn.pixabay.com/photo/2019/03/07/03/41/troll-4039410_960_720.png');"></div>
+</body>
+	
 
-</body> 
-  <script>
-    
-    function openMenu(){
-        document.getElementById("LinksForMenu").style.width="100%";
-          document.getElementById("MenuAn").innerHTML="<i class='fa fa-close'></i>";
-           document.getElementById("MenuAn").style.left="50%";
-      document.getElementById("MenuItems").style.left="50%";
-        document.getElementById("MenuAn").onclick=CloseMenu;
-    }
-     function CloseMenu(){
-        document.getElementById("LinksForMenu").style.width="0%";
-        document.getElementById("MenuAn").innerHTML="<i class='fa fa-bars'></i>";
- document.getElementById("MenuAn").style.left="0%";
-        document.getElementById("MenuItems").style.left="0%";
-        document.getElementById("MenuAn").onclick=openMenu;
-    }
-  </script>
-
+	
+		<div Class = " Underline"></div>
+	<footer>
+	<p></p>
+	<p>Programmed by <i><a href="mailto:puncherbeargames@gmail.com">Elias Alaniz</a> (email link)</i></p>
+	<p></p>	
+	</footer>
+	<h2 class = "TitleText">
+		D&amp;R
+		</h2>
+	
+	<style>
+		html, body
+		{
+			height: 100%;
+			padding: 0;
+			
+			margin: 0;
+			
+			background-color:#FFFFFF;
+			
+			word-wrap: break-word;
+			
+			text-align:center;
+			
+		}
+		
+		.test
+		{
+			backgroud-color:#ffffff;
+		}
+		
+	.parallax {
+  /* The image used */
  
 
+  /* Full height */
+  height: 100%; 
 
-  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+		
+		footer
+		{
+			display:block;
+		}
+		.FL
+		{
+			text-align: left;
+		}
+		.FC
+		{
+			text-align:center;
+		}
+		.FR
+		{
+		text-align: right;	
+		}
+		.ControlTop
+		{
+			postion:fixed;
+			
+		}
+		.MenuAll
+		{
+			
+			overflow: hidden;
+			
+		}
+		
+		.TitleText
+		{
+			
+			text-align:center;
+			  vertical-align:top;
+			position:inherit;
+		
+
+		}
+		
+		.Underline
+		{
+			
+			background-color: #00C9FC;
+			padding-top: 0.1%;
+			position:inherit;
+		}
+		
+		.MeCo
+		{
+			
+			border: 2px solid #70FFFA;
+			border-radius: 10%;
+			position: fixed;
+			top:0;
+		}
+		
+		#MenC
+		{
+			
+			transition-duration: 0.4s;
+			position: fixed;
+			left:0%;
+			top:0;
+		}
+		
+		#Menu
+		{
+			
+			list-style: none;
+			color: #405F5F;
+			background-color: rgba(46,117,127,0.8);
+			position:fixed;
+			  -webkit-transition-duration: 0.4s;
+			  transition-duration: 0.4s;
+			overflow: hidden;
+			width:0%;
+			height: 0%;
+top:0;
+		}
+       
+		.Mcon
+		{
+			
+			display: block;
+			margin: auto;
+			max-width: 300px;
+			border:none;
+			
+			overflow:hidden;
+			border-color:#E5EBFD;
+			color: #2C5E8F;
+			font-family:  "Arial";
+			background-color: #EEFDFF;
+			top:0;
+			text-decoration: none;
+            text-align:center;
+			transition-duration:0.5s;
+		}
+		
+        .Mcon:hover
+        {
+        
+        text-decoration:none;
+        
+        }
+        .active:hover, .Mcon:hover
+        {
+        
+            background-color: rgb(162,192,161);
+            
+        }
+	</style>
+	
+	<script>
+	
+	function e(){
+		
+		document.getElementById("Menu").style.width = "50%";
+		
+		document.getElementById("Menu").style.height = "100%";
+		
+			document.getElementById("MenC").innerHTML = "<button class='MeCo' id = 'OpenMenu' onClick='e2()'><i class='glyphicon glyphicon-remove'></i></button>";
+		
+		document.getElementById("MenC").style.left = "50%";
+		
+	}
+		
+		function e2(){
+			
+	document.getElementById("Menu").style.width = "0%";
+			
+		document.getElementById("Menu").style.height = "0%";
+			
+		document.getElementById("MenC").innerHTML = "<button class='MeCo'  onClick='e()'><i class='fas fa-bars'></i></button>";
+			
+		document.getElementById("MenC").style.left = "0%";
+			
+	}
+	</script>
+	
+</html>
+
+
+
+
+
+
 
